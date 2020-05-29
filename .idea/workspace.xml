@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9112cb4-de54-4976-9784-d68762c5bac9" name="Default Changelist" comment="" />
+    <list default="true" id="f9112cb4-de54-4976-9784-d68762c5bac9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadingService.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadingService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/thoughts.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/thoughts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/TimeUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/TimeUtils.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +20,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -26,12 +36,14 @@
     </option>
   </component>
   <component name="ProjectId" id="1cYLarvnLzZqctjcYMRlsWLUGQo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -123,7 +135,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590700646108</updated>
       <workItem from="1590700654937" duration="2159000" />
-      <workItem from="1590782119563" duration="1957000" />
+      <workItem from="1590782119563" duration="3420000" />
     </task>
     <servers />
   </component>
@@ -131,29 +143,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2517" height="400" key="GridCell.Tab.0.bottom" timestamp="1590784223029">
+    <state x="1085" y="415" key="#com.intellij.ide.util.MemberChooser" timestamp="1590784767660">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="400" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1590784223029" />
-    <state width="2517" height="400" key="GridCell.Tab.0.center" timestamp="1590784223029">
+    <state x="1085" y="415" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1590784767660" />
+    <state width="2517" height="399" key="GridCell.Tab.0.bottom" timestamp="1590785250066">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="400" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1590784223029" />
-    <state width="2517" height="400" key="GridCell.Tab.0.left" timestamp="1590784223029">
+    <state width="2517" height="399" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1590785250066" />
+    <state width="2517" height="399" key="GridCell.Tab.0.center" timestamp="1590785250066">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="400" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1590784223029" />
-    <state width="2517" height="400" key="GridCell.Tab.0.right" timestamp="1590784223029">
+    <state width="2517" height="399" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1590785250066" />
+    <state width="2517" height="399" key="GridCell.Tab.0.left" timestamp="1590785250066">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="400" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1590784223029" />
+    <state width="2517" height="399" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1590785250066" />
+    <state width="2517" height="399" key="GridCell.Tab.0.right" timestamp="1590785250066">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="399" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1590785250066" />
     <state x="148" y="343" key="SettingsEditor" timestamp="1590701535597">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="148" y="343" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1590701535597" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DailyCPUpdater$Main.coverage" NAME="Main Coverage Results" MODIFIED="1590784223016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/DailyCPUpdater$Main.coverage" NAME="Main Coverage Results" MODIFIED="1590785250059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/DailyCPUpdater$main.coverage" NAME="ReadingService Coverage Results" MODIFIED="1590702211778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

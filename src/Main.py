@@ -1,3 +1,3 @@
-from src.ReadingService import get_thoughts_from_json
+from src.thoughts.ThoughtService import ThoughtService
 
-get_thoughts_from_json()
+print(ThoughtService().get_today_thought())

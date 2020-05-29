@@ -7,6 +7,7 @@ class TimeUtils:
     def get_time():
         return date.today()
 
-    def is_today(self, scheduled_time: str):
+    @staticmethod
+    def is_today(scheduled_time: str):
         scheduled_object = datetime.datetime.strptime(scheduled_time, "%Y-%m-%d").date()
-        return scheduled_object == self.get_time()
+        return scheduled_object == TimeUtils.get_time()

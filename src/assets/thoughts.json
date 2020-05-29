@@ -2,12 +2,12 @@
   {
     "name": "Mario",
     "age": 22,
-    "scheduled_at": "2020-05-29"
+    "scheduled_at": "2020-05-27"
   },
   {
     "name": "Kristina",
     "age": 29,
-    "scheduled_at": "2020-05-29"
+    "scheduled_at": "2020-05-28"
   },
   {
     "name": "Laura",
@@ -17,6 +17,6 @@
   {
     "name": "Mihael",
     "age": 2,
-    "scheduled_at": "2020-05-29"
+    "scheduled_at": "2020-05-30"
   }
 ]
