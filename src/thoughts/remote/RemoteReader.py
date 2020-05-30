@@ -1,7 +1,4 @@
-from firebase_admin import firestore
-
-
-class ReadRemote:
+class RemoteReader:
 
     def __init__(self, db):
         self.db = db

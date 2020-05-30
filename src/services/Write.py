@@ -1,6 +1,6 @@
 from abc import ABC
 
 
-class Writing(ABC):
+class Write(ABC):
     def write(self, data):
         pass

@@ -1,10 +1,10 @@
 import json
 
-from src.services.Writing import Writing
+from src.services.Write import Write
 from src.thoughts.data.ThoughtEncoder import MyEncoder
 
 
-class LocalWriter(Writing):
+class LocalWriter(Write):
     thoughts = list()
 
     def write(self, thoughts: list):

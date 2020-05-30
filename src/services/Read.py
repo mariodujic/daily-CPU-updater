@@ -1,6 +1,6 @@
 from abc import ABC
 
 
-class Reading(ABC):
+class Read(ABC):
     def read(self):
         pass

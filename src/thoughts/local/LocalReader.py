@@ -1,10 +1,10 @@
 import json
 
-from src.services.Reading import Reading
+from src.services.Read import Read
 from src.thoughts.data.Thought import Thought
 
 
-class LocalReader(Reading):
+class LocalReader(Read):
 
     def read(self):
         thoughts = list()
