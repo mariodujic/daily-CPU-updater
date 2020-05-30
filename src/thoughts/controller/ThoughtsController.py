@@ -19,7 +19,10 @@ class ThoughtsController:
         return None
 
     def write_json(self, thought: Thought):
-        self.writing_service.write_json(self.thought_used_list(thought))
+        if not thought.used:
+            self.writing_service.write_json(self.thought_used_list(thought))
+        else:
+            print("Today's item is already set to \"used\"")
 
     def thought_used_list(self, thought: Thought):
         print(len(self.thoughts))

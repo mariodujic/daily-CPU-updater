@@ -1,10 +1,8 @@
 from dataclasses import dataclass
 
-from src.data.ItemBase import ItemBase
-
 
 @dataclass
-class Thought(ItemBase):
+class Thought:
     itemId: str
     name: str
     age: int
