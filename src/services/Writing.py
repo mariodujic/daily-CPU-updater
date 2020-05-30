@@ -2,5 +2,5 @@ from abc import ABC
 
 
 class Writing(ABC):
-    def write_json(self, data):
+    def write(self, data):
         pass
