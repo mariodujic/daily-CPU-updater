@@ -4,13 +4,8 @@
     <list default="true" id="f9112cb4-de54-4976-9784-d68762c5bac9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Reading.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Read.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Writing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Write.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/thoughts/controller/ThoughtsController.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/thoughts/controller/ThoughtsController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thoughts/local/LocalReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/thoughts/local/LocalReader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thoughts/local/LocalWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/thoughts/local/LocalWriter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thoughts/remote/ReadRemote.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/thoughts/remote/RemoteReader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thoughts/remote/Remote.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/thoughts/remote/Remote.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thoughts/remote/RemoteReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/thoughts/remote/RemoteReader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +168,7 @@
       <workItem from="1590700654937" duration="2159000" />
       <workItem from="1590782119563" duration="4078000" />
       <workItem from="1590832005094" duration="14119000" />
-      <workItem from="1590868667948" duration="4723000" />
+      <workItem from="1590868667948" duration="5327000" />
     </task>
     <servers />
   </component>
@@ -181,30 +176,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1085" y="415" key="#com.intellij.ide.util.MemberChooser" timestamp="1590870838762">
+    <state x="1085" y="415" key="#com.intellij.ide.util.MemberChooser" timestamp="1590874034478">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1085" y="415" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1590870838762" />
+    <state x="1085" y="415" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1590874034478" />
     <state x="1034" y="323" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590872961563">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1034" y="323" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590872961563" />
-    <state width="2517" height="523" key="GridCell.Tab.0.bottom" timestamp="1590873428109">
+    <state width="2517" height="523" key="GridCell.Tab.0.bottom" timestamp="1590874068317">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1590873428109" />
-    <state width="2517" height="523" key="GridCell.Tab.0.center" timestamp="1590873428108">
+    <state width="2517" height="523" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1590874068317" />
+    <state width="2517" height="523" key="GridCell.Tab.0.center" timestamp="1590874068317">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1590873428108" />
-    <state width="2517" height="523" key="GridCell.Tab.0.left" timestamp="1590873428108">
+    <state width="2517" height="523" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1590874068317" />
+    <state width="2517" height="523" key="GridCell.Tab.0.left" timestamp="1590874068317">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1590873428108" />
-    <state width="2517" height="523" key="GridCell.Tab.0.right" timestamp="1590873428109">
+    <state width="2517" height="523" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1590874068317" />
+    <state width="2517" height="523" key="GridCell.Tab.0.right" timestamp="1590874068317">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="523" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1590873428108" />
+    <state width="2517" height="523" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1590874068317" />
     <state x="148" y="343" key="SettingsEditor" timestamp="1590869307576">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -213,13 +208,17 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="976" y="432" width="607" height="536" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1590872766844" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1590872823828">
+    <state x="1021" y="343" key="refactoring.ChangeSignatureDialog" timestamp="1590873900241">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1590872823828" />
+    <state x="1021" y="343" key="refactoring.ChangeSignatureDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590873900241" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1590873895934">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1590873895934" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DailyCPUpdater$App.coverage" NAME="App Coverage Results" MODIFIED="1590873428102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DailyCPUpdater$App.coverage" NAME="App Coverage Results" MODIFIED="1590874068310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DailyCPUpdater$Main.coverage" NAME="Main Coverage Results" MODIFIED="1590873365818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/DailyCPUpdater$main.coverage" NAME="ReadingService Coverage Results" MODIFIED="1590702211778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

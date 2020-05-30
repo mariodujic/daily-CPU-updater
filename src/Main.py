@@ -8,11 +8,12 @@ from src.thoughts.remote.RemoteReader import RemoteReader
 class Main:
     # dependencies
     remote = Remote()
-    read_service = LocalReader()
-    write_service = LocalWriter()
-    thought_controller = ThoughtsController(read_service, write_service)
+    local_reader = LocalReader()
+    local_writer = LocalWriter()
+    remote_reader = RemoteReader(remote.get_client())
+    thought_controller = ThoughtsController(local_reader, local_writer, remote_reader)
 
     def initialize(self):
         today_thought = self.thought_controller.get_today_thought()
         self.thought_controller.write_json(today_thought)
-        print(RemoteReader(self.remote.get_client()).get_remote_data())
+        print(self.remote_reader.read())

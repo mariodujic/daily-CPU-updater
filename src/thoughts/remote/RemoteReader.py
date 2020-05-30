@@ -1,8 +1,12 @@
-class RemoteReader:
+from src.services.Read import Read
+
+
+class RemoteReader(Read):
 
     def __init__(self, db):
         self.db = db
         self.collection = db.collection("hello")
 
-    def get_remote_data(self):
+    def read(self):
         return self.collection.document("test").get()
+
