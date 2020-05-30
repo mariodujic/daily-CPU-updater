@@ -1,3 +1,5 @@
-from src.thoughts.ThoughtService import ThoughtService
+from src.thoughts.ThoughtsController import ThoughtsController
 
-print(ThoughtService().get_today_thought())
+thought_service = ThoughtsController()
+
+thought_service.set_today_thought_used(thought_service.get_today_thought())

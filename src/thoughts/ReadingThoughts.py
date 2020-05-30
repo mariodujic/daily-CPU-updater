@@ -11,6 +11,7 @@ class ReadingThoughts(Reading):
         with open("assets/thoughts.json") as json_file:
             data = json.load(json_file)
             for p in data:
-                thought = Thought(p["name"], p["age"], p["scheduled_at"])
+                thought = Thought(p["name"], p["age"], p["scheduled_at"], p["used"])
                 self.thoughts.append(thought)
+            json_file.close()
             return self.thoughts

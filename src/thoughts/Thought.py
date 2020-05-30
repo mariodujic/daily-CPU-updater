@@ -6,3 +6,4 @@ class Thought:
     name: str
     age: int
     scheduled_at: str
+    used: bool
