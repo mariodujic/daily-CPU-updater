@@ -1,5 +1,6 @@
-from src.thoughts.ThoughtsController import ThoughtsController
+from src.thoughts.controller.ThoughtsController import ThoughtsController
 
-thought_service = ThoughtsController()
+thought_controller = ThoughtsController()
 
-thought_service.set_today_thought_used(thought_service.get_today_thought())
+today_thought = thought_controller.get_today_thought()
+thought_controller.write_json(today_thought)

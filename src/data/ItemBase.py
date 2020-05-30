@@ -1,0 +1,2 @@
+class ItemBase:
+    itemId: str
