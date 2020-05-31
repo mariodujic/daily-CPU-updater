@@ -13,5 +13,4 @@ class LocalReader(Read):
             for p in data:
                 thought = Thought(p["itemId"], p["name"], p["age"], p["scheduled_at"], p["used"])
                 thoughts.append(thought)
-            json_file.close()
             return thoughts
