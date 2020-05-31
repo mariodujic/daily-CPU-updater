@@ -2,6 +2,7 @@
 google-service.json
 TODO.txt
 .idea/workspace.xml
+.backups
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
