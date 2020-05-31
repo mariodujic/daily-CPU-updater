@@ -3,22 +3,26 @@ from src.services.Read import Read
 from src.services.Write import Write
 from src.thoughts.data.Thought import Thought
 from src.thoughts.data.ThoughtLocale import ThoughtLocale
+from src.utils.TimeUtils import TimeUtils
 
 
 class BackupController:
-    def __init__(self, local_writer: Write, remote_reader: Read):
-        self.local_writing_service = local_writer
+    def __init__(self, backup_writer: Write, remote_reader: Read):
+        self.backup_writing_service = backup_writer
         self.remote_reading_service = remote_reader
 
     def write_remote_data_backup(self):
-        self.local_writing_service.write(
+        time = TimeUtils.current_date_and_time_as_path_stamp()
+        self.backup_writing_service.write(
             self.__read_remote_en_data(),
-            "backups/en-thoughts.json",
+            "backups/" + time+"/",
+            "en-thoughts.json",
             BackupThoughtEncoder
         )
-        self.local_writing_service.write(
+        self.backup_writing_service.write(
             self.__read_remote_hr_data(),
-            "backups/hr-thoughts.json",
+            "backups/" + time+"/",
+            "hr-thoughts.json",
             BackupThoughtEncoder
         )
 

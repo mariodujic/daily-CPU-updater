@@ -12,3 +12,8 @@ class TimeUtils:
         scheduled_object = datetime.datetime.strptime(scheduled_time,
                                                       "%Y-%m-%dT%H:%M:%S.%fZ").date()
         return scheduled_object == TimeUtils.get_time()
+
+    @staticmethod
+    def current_date_and_time_as_path_stamp():
+        formatted = datetime.datetime.now().strftime("%d-%m-%Y %H-%M-%S")
+        return str(formatted)
