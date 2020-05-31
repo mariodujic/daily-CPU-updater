@@ -12,10 +12,10 @@ class ThoughtsController:
         self.remote_writing_service = remote_writer
 
     def write_data(self):
-        if len(self.__get_today_thought()) == 0:
+        if len(self.__get_today_thoughts()) == 0:
             print("There is no thought for today in JSON file")
             return
-        for thought in self.__get_today_thought():
+        for thought in self.__get_today_thoughts():
             self.__write_json(thought)
             self.__write_remote(thought)
 
@@ -25,10 +25,10 @@ class ThoughtsController:
     def __write_remote(self, thought: Thought):
         self.remote_writing_service.write(thought)
 
-    def __get_today_thought(self):
+    def __get_today_thoughts(self):
         thoughts = []
         for thought in self.__get_thoughts():
-            if TimeUtils.is_today(thought.date):
+            if TimeUtils.is_today(thought.date) and not thought.used:
                 thoughts.append(thought)
         return thoughts
 

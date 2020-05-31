@@ -7,7 +7,7 @@
         "text": "Random text",
         "title": "Random title",
         "locale": "en",
-        "used": false
+        "used": true
     },
     {
         "author": "Tom McLark",
@@ -17,7 +17,7 @@
         "text": "Random text",
         "title": "Random title",
         "locale": "hr",
-        "used": false
+        "used": true
     },
     {
         "author": "Tom McLark",
@@ -27,6 +27,6 @@
         "text": "Random text",
         "title": "Random title",
         "locale": "en",
-        "used": false
+        "used": true
     }
 ]

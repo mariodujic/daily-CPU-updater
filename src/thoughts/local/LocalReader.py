@@ -7,7 +7,7 @@ from src.thoughts.data.ThoughtLocale import ThoughtLocale
 
 class LocalReader(Read):
 
-    def read(self):
+    def read(self, *args):
         thoughts = list()
         with open("assets/thoughts.json") as json_file:
             data = json.load(json_file)
