@@ -5,9 +5,7 @@
         "image": "",
         "itemId": "asdasdsfgd",
         "text": "Random text",
-        "title": "Random title",
-        "locale": "en",
-        "used": false
+        "title": "Random title"
     },
     {
         "author": "Tom McLark",
@@ -15,9 +13,7 @@
         "image": "",
         "itemId": "asdasdsfgd",
         "text": "Random text",
-        "title": "Random title",
-        "locale": "en",
-        "used": false
+        "title": "Random title"
     },
     {
         "author": "Tom McLark",
@@ -25,8 +21,6 @@
         "image": "",
         "itemId": "asdasdsfgd",
         "text": "Random text",
-        "title": "Random title",
-        "locale": "en",
-        "used": false
+        "title": "Random title"
     }
 ]

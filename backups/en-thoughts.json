@@ -5,9 +5,7 @@
         "image": "",
         "itemId": "dsfsdf",
         "text": "Random text",
-        "title": "Random title",
-        "locale": "en",
-        "used": false
+        "title": "Random title"
     },
     {
         "author": "Tom McLark",
@@ -15,9 +13,7 @@
         "image": "",
         "itemId": "asddfsdfasd",
         "text": "Random text",
-        "title": "Random title",
-        "locale": "en",
-        "used": false
+        "title": "Random title"
     },
     {
         "author": "Tom McLark",
@@ -25,9 +21,7 @@
         "image": "",
         "itemId": "dsfsdf",
         "text": "Random text",
-        "title": "Random title",
-        "locale": "en",
-        "used": false
+        "title": "Random title"
     },
     {
         "author": "Tom McLark",
@@ -35,9 +29,7 @@
         "image": "",
         "itemId": "dsfsdf",
         "text": "Random text",
-        "title": "Random title",
-        "locale": "en",
-        "used": false
+        "title": "Random title"
     },
     {
         "author": "Tom McLark",
@@ -45,9 +37,7 @@
         "image": "",
         "itemId": "asddfsdfasd",
         "text": "Random text",
-        "title": "Random title",
-        "locale": "en",
-        "used": false
+        "title": "Random title"
     },
     {
         "author": "Tom McLark",
@@ -55,8 +45,6 @@
         "image": "",
         "itemId": "asddfsdfasd",
         "text": "Random text",
-        "title": "Random title",
-        "locale": "en",
-        "used": false
+        "title": "Random title"
     }
 ]

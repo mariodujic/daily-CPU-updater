@@ -3,7 +3,7 @@ import json
 from src.thoughts.data.Thought import Thought
 
 
-class ThoughtEncoder(json.JSONEncoder):
+class BackupThoughtEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, Thought):
             return {
@@ -12,8 +12,6 @@ class ThoughtEncoder(json.JSONEncoder):
                 "image": obj.image,
                 "itemId": obj.itemId,
                 "text": obj.text,
-                "title": obj.title,
-                "locale": obj.locale.name.lower(),
-                "used": obj.used
+                "title": obj.title
             }
         return json.JSONEncoder.default(self, obj)

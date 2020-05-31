@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f9112cb4-de54-4976-9784-d68762c5bac9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backups/en-thoughts.json" beforeDir="false" afterPath="$PROJECT_DIR$/backups/en-thoughts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backups/hr-thoughts.json" beforeDir="false" afterPath="$PROJECT_DIR$/backups/hr-thoughts.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/backup/controller/BackupController.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backup/controller/BackupController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Write.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Write.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/LocalWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/LocalWriter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/thoughts/controller/ThoughtsController.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/thoughts/controller/ThoughtsController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thoughts/data/Thought.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/thoughts/data/Thought.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thoughts/local/LocalReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/thoughts/local/LocalReader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thoughts/local/LocalWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/thoughts/local/LocalWriter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thoughts/data/ThoughtEncoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/thoughts/data/ExtendedThoughtEncoder.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +54,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PythonProjects\DailyCPUpdater\src\services" />
       <recent name="C:\PythonProjects\DailyCPUpdater\src\backup\services" />
       <recent name="C:\PythonProjects\DailyCPUpdater" />
       <recent name="C:\PythonProjects\DailyCPUpdater\src\resources" />
       <recent name="C:\PythonProjects\DailyCPUpdater\src\thoughts\controller" />
-      <recent name="C:\PythonProjects\DailyCPUpdater\src\thoughts\data" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\PythonProjects\DailyCPUpdater\src\backup\controller" />
@@ -177,7 +176,7 @@
       <workItem from="1590868667948" duration="5548000" />
       <workItem from="1590902335368" duration="4575000" />
       <workItem from="1590906926556" duration="12044000" />
-      <workItem from="1590950823528" duration="5262000" />
+      <workItem from="1590950823528" duration="6664000" />
     </task>
     <servers />
   </component>
@@ -185,30 +184,38 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1000" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590957075677">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1000" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1590957075677" />
     <state x="1085" y="415" key="#com.intellij.ide.util.MemberChooser" timestamp="1590951360343">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1085" y="415" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1590951360343" />
-    <state x="1034" y="323" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590872961563">
+    <state x="1034" y="323" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590957144915">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1034" y="323" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590872961563" />
-    <state width="2517" height="531" key="GridCell.Tab.0.bottom" timestamp="1590956291653">
+    <state x="1034" y="323" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590957144915" />
+    <state x="719" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1590956452371">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="531" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1590956291653" />
-    <state width="2517" height="531" key="GridCell.Tab.0.center" timestamp="1590956291652">
+    <state x="719" y="0" key="FileDocumentManager.FileCacheConflict/0.0.2560.1400@0.0.2560.1400" timestamp="1590956452371" />
+    <state width="2517" height="531" key="GridCell.Tab.0.bottom" timestamp="1590957623233">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="531" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1590956291652" />
-    <state width="2517" height="531" key="GridCell.Tab.0.left" timestamp="1590956291652">
+    <state width="2517" height="531" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1590957623233" />
+    <state width="2517" height="531" key="GridCell.Tab.0.center" timestamp="1590957623233">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="531" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1590956291652" />
-    <state width="2517" height="531" key="GridCell.Tab.0.right" timestamp="1590956291653">
+    <state width="2517" height="531" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1590957623233" />
+    <state width="2517" height="531" key="GridCell.Tab.0.left" timestamp="1590957623233">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="531" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1590956291653" />
+    <state width="2517" height="531" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1590957623233" />
+    <state width="2517" height="531" key="GridCell.Tab.0.right" timestamp="1590957623233">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="531" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1590957623233" />
     <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1590929791518">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -243,7 +250,7 @@
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1590918702818" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DailyCPUpdater$App.coverage" NAME="App Coverage Results" MODIFIED="1590956291646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DailyCPUpdater$App.coverage" NAME="App Coverage Results" MODIFIED="1590957623227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DailyCPUpdater$Main.coverage" NAME="Main Coverage Results" MODIFIED="1590873365818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/DailyCPUpdater$main.coverage" NAME="ReadingService Coverage Results" MODIFIED="1590702211778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

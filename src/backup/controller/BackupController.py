@@ -1,3 +1,4 @@
+from src.backup.domain.BackupThoughtEncoder import BackupThoughtEncoder
 from src.services.Read import Read
 from src.services.Write import Write
 from src.thoughts.data.Thought import Thought
@@ -10,8 +11,16 @@ class BackupController:
         self.remote_reading_service = remote_reader
 
     def write_remote_data_backup(self):
-        self.local_writing_service.write(self.__read_remote_en_data(), "backups/en-thoughts.json")
-        self.local_writing_service.write(self.__read_remote_hr_data(), "backups/hr-thoughts.json")
+        self.local_writing_service.write(
+            self.__read_remote_en_data(),
+            "backups/en-thoughts.json",
+            BackupThoughtEncoder
+        )
+        self.local_writing_service.write(
+            self.__read_remote_hr_data(),
+            "backups/hr-thoughts.json",
+            BackupThoughtEncoder
+        )
 
     def __read_remote_en_data(self):
         thoughts = []

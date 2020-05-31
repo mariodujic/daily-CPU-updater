@@ -1,15 +1,15 @@
 from src.backup.controller.BackupController import BackupController
-from src.backup.remote.RemoteReader import RemoteReader
+from src.backup.services.RemoteReader import RemoteReader
 from src.thoughts.controller.ThoughtsController import ThoughtsController
-from src.thoughts.local.LocalReader import LocalReader
+from src.thoughts.services.LocalReader import LocalReader
 from src.services.LocalWriter import LocalWriter
-from src.thoughts.remote.Remote import Remote
-from src.thoughts.remote.RemoteWriter import RemoteWriter
+from src.data.RemoteDatabase import RemoteDatabase
+from src.thoughts.services.RemoteWriter import RemoteWriter
 
 
 class Main:
     # dependencies
-    remote = Remote()
+    remote = RemoteDatabase()
     local_reader = LocalReader()
     local_writer = LocalWriter()
     remote_writer = RemoteWriter(remote.get_client())

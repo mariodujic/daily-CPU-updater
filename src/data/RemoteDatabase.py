@@ -2,7 +2,7 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 
 
-class Remote:
+class RemoteDatabase:
 
     def __init__(self):
         cred = credentials.Certificate("google-service.json")

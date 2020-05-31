@@ -12,7 +12,7 @@ class RemoteWriter(Write):
         self.db = db
 
     def write(self, thought: Thought):
-        print("Writing data to firestore.")
+        print("Writing domain to firestore.")
         self.__get_doc(thought.locale.name.lower()).set(thought.remote_dict())
 
     def __get_doc(self, locale: str):
