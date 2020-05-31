@@ -2,6 +2,7 @@ import json
 
 from src.services.Read import Read
 from src.thoughts.data.Thought import Thought
+from src.thoughts.data.ThoughtLocale import ThoughtLocale
 
 
 class LocalReader(Read):
@@ -18,6 +19,7 @@ class LocalReader(Read):
                     p["itemId"],
                     p["text"],
                     p["title"],
+                    ThoughtLocale(p["locale"]),
                     p["used"]
                 )
                 thoughts.append(thought)

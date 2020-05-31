@@ -1,11 +1,12 @@
 [
     {
         "author": "Tom McLark",
-        "date": "2020-05-30T22:00:00.000Z",
+        "date": "2020-05-31T22:00:00.000Z",
         "image": "",
         "itemId": "dsfsdf",
         "text": "Random text",
         "title": "Random title",
+        "locale": "en",
         "used": false
     },
     {
@@ -15,15 +16,17 @@
         "itemId": "asdasdsfgd",
         "text": "Random text",
         "title": "Random title",
-        "used": true
+        "locale": "hr",
+        "used": false
     },
     {
         "author": "Tom McLark",
-        "date": "2020-06-01T22:00:00.000Z",
+        "date": "2020-05-31T22:00:00.000Z",
         "image": "",
         "itemId": "asddfsdfasd",
         "text": "Random text",
         "title": "Random title",
+        "locale": "en",
         "used": false
     }
 ]

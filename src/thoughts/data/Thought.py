@@ -1,5 +1,7 @@
 from dataclasses import dataclass
 
+from src.thoughts.data.ThoughtLocale import ThoughtLocale
+
 
 @dataclass
 class Thought:
@@ -9,6 +11,7 @@ class Thought:
     itemId: str
     text: str
     title: str
+    locale: ThoughtLocale
     used: bool
 
     def remote_dict(self):
@@ -18,5 +21,5 @@ class Thought:
             "image": self.image,
             "itemId": self.itemId,
             "text": self.text,
-            "title": self.title,
+            "title": self.title
         }

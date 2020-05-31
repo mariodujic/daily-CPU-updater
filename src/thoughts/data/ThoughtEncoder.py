@@ -13,6 +13,7 @@ class ThoughtEncoder(json.JSONEncoder):
                 "itemId": obj.itemId,
                 "text": obj.text,
                 "title": obj.title,
+                "locale": obj.locale.name.lower(),
                 "used": obj.used
             }
         return json.JSONEncoder.default(self, obj)

@@ -1,0 +1,2 @@
+class LocaleError(Exception):
+    pass
