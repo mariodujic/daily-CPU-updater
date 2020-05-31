@@ -8,7 +8,7 @@ def constant(f):
     return property(temp_get, temp_set)
 
 
-class _Const(object):
+class _Const:
     @constant
     def THOUGHT_COLLECTION(self):
         return "hello"
