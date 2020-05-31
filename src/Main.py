@@ -3,6 +3,7 @@ from src.thoughts.local.LocalReader import LocalReader
 from src.thoughts.local.LocalWriter import LocalWriter
 from src.thoughts.remote.Remote import Remote
 from src.thoughts.remote.RemoteReader import RemoteReader
+from src.thoughts.remote.RemoteWriter import RemoteWriter
 
 
 class Main:
@@ -11,9 +12,14 @@ class Main:
     local_reader = LocalReader()
     local_writer = LocalWriter()
     remote_reader = RemoteReader(remote.get_client())
-    thought_controller = ThoughtsController(local_reader, local_writer, remote_reader)
+    remote_writer = RemoteWriter(remote.get_client())
+    thought_controller = ThoughtsController(
+        local_reader,
+        local_writer,
+        remote_reader,
+        remote_writer
+    )
 
     def initialize(self):
-        today_thought = self.thought_controller.get_today_thought()
-        self.thought_controller.write_json(today_thought)
-        print(self.remote_reader.read())
+        self.thought_controller.write_json()
+        self.thought_controller.write_remote()
