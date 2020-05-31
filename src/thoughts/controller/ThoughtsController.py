@@ -20,7 +20,7 @@ class ThoughtsController:
             self.__write_remote(thought)
 
     def __write_json(self, thought: Thought):
-        self.local_writing_service.write(self.__thought_used_list(thought))
+        self.local_writing_service.write(self.__thought_used_list(thought), "assets/thoughts.json")
 
     def __write_remote(self, thought: Thought):
         self.remote_writing_service.write(thought)

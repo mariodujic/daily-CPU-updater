@@ -11,8 +11,8 @@ class Thought:
     itemId: str
     text: str
     title: str
-    locale: ThoughtLocale
-    used: bool
+    locale: ThoughtLocale = ThoughtLocale.EN
+    used: bool = False
 
     def remote_dict(self):
         return {
@@ -23,3 +23,27 @@ class Thought:
             "text": self.text,
             "title": self.title
         }
+
+    @staticmethod
+    def json_to_object(data):
+        return Thought(
+            data["author"],
+            data["date"],
+            data["image"],
+            data["itemId"],
+            data["text"],
+            data["title"],
+            ThoughtLocale(data["locale"]),
+            data["used"]
+        )
+
+    @staticmethod
+    def remote_to_object(data):
+        return Thought(
+            data["author"],
+            data["date"],
+            data["image"],
+            data["itemId"],
+            data["text"],
+            data["title"]
+        )

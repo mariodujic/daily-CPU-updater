@@ -2,7 +2,7 @@ from src.backup.controller.BackupController import BackupController
 from src.backup.remote.RemoteReader import RemoteReader
 from src.thoughts.controller.ThoughtsController import ThoughtsController
 from src.thoughts.local.LocalReader import LocalReader
-from src.thoughts.local.LocalWriter import LocalWriter
+from src.services.LocalWriter import LocalWriter
 from src.thoughts.remote.Remote import Remote
 from src.thoughts.remote.RemoteWriter import RemoteWriter
 
@@ -26,4 +26,4 @@ class Main:
 
     def initialize(self):
         self.thought_controller.write_data()
-        self.backup_controller.read_remote_data()
+        self.backup_controller.write_remote_data_backup()
