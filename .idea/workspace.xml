@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9112cb4-de54-4976-9784-d68762c5bac9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backup/controller/BackupController.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backup/controller/BackupController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/LocalWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/thoughts/services/LocalWriter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/TimeUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/TimeUtils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +172,7 @@
       <workItem from="1590902335368" duration="4575000" />
       <workItem from="1590906926556" duration="12044000" />
       <workItem from="1590950823528" duration="9609000" />
+      <workItem from="1590960987095" duration="241000" />
     </task>
     <servers />
   </component>
@@ -198,22 +196,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="719" y="0" key="FileDocumentManager.FileCacheConflict/0.0.2560.1400@0.0.2560.1400" timestamp="1590956452371" />
-    <state width="2517" height="531" key="GridCell.Tab.0.bottom" timestamp="1590961108556">
+    <state width="2517" height="531" key="GridCell.Tab.0.bottom" timestamp="1590961128190">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="531" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1590961108556" />
-    <state width="2517" height="531" key="GridCell.Tab.0.center" timestamp="1590961108556">
+    <state width="2517" height="531" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1590961128190" />
+    <state width="2517" height="531" key="GridCell.Tab.0.center" timestamp="1590961128190">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="531" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1590961108556" />
-    <state width="2517" height="531" key="GridCell.Tab.0.left" timestamp="1590961108556">
+    <state width="2517" height="531" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1590961128190" />
+    <state width="2517" height="531" key="GridCell.Tab.0.left" timestamp="1590961128190">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="531" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1590961108556" />
-    <state width="2517" height="531" key="GridCell.Tab.0.right" timestamp="1590961108556">
+    <state width="2517" height="531" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1590961128190" />
+    <state width="2517" height="531" key="GridCell.Tab.0.right" timestamp="1590961128190">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="531" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1590961108556" />
+    <state width="2517" height="531" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1590961128190" />
     <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1590929791518">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
