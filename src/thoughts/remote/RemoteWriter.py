@@ -10,9 +10,9 @@ class RemoteWriter(Write):
 
     def __init__(self, db):
         self.db = db
-        self.collection = db.collection(CONST.THOUGHT_COLLECTION)
+        self.collection = db.collection(CONST.THOUGHT_COLLECTION_HR)
         self.doc = self.collection.document(str(uuid.uuid4()))
 
     def write(self, data: Thought):
-        print(asdict(data))
-        self.doc.set(asdict(data))
+        print("Writing data to firestore.")
+        self.doc.set(data.remote_dict())

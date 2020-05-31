@@ -13,20 +13,24 @@ class ThoughtsController:
         self.remote_reading_service = remote_reader
         self.remote_writing_service = remote_writer
 
-    def write_json(self):
+    def write_data(self):
         if self.__get_today_thought() is None:
             print("There is no thought for today in JSON file")
-        elif not self.__get_today_thought().used:
-            self.local_writing_service.write(self.__thought_used_list(self.__get_today_thought()))
-        else:
+        elif self.__get_today_thought().used:
             print("Today's item is already set to \"used\"")
+        else:
+            self.__write_json()
+            self.__write_remote()
 
-    def write_remote(self):
+    def __write_json(self):
+        self.local_writing_service.write(self.__thought_used_list(self.__get_today_thought()))
+
+    def __write_remote(self):
         self.remote_writing_service.write(self.__get_today_thought())
 
     def __get_today_thought(self):
         for thought in self.__get_thoughts():
-            if TimeUtils.is_today(thought.scheduled_at):
+            if TimeUtils.is_today(thought.date):
                 return thought
         return None
 

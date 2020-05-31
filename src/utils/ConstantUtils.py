@@ -10,8 +10,12 @@ def constant(f):
 
 class _Const:
     @constant
-    def THOUGHT_COLLECTION(self):
-        return "hello"
+    def THOUGHT_COLLECTION_HR(self):
+        return "hr-thoughts-staging"
+
+    @constant
+    def THOUGHT_COLLECTION_EN(self):
+        return "en-thoughts-staging"
 
 
 CONST = _Const()

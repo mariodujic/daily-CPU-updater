@@ -21,5 +21,4 @@ class Main:
     )
 
     def initialize(self):
-        self.thought_controller.write_json()
-        self.thought_controller.write_remote()
+        self.thought_controller.write_data()

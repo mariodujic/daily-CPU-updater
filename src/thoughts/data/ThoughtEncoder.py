@@ -7,10 +7,12 @@ class ThoughtEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, Thought):
             return {
+                "author": obj.author,
+                "date": obj.date,
+                "image": obj.image,
                 "itemId": obj.itemId,
-                "name": obj.name,
-                "age": obj.age,
-                "scheduled_at": obj.scheduled_at,
+                "text": obj.text,
+                "title": obj.title,
                 "used": obj.used
             }
         return json.JSONEncoder.default(self, obj)
