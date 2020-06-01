@@ -1,9 +1,9 @@
 import uuid
 
+from src.environment.Environment import Environment
 from src.services.Write import Write
 from src.thoughts.data.Thought import Thought
 from src.thoughts.error_handlers.LocaleError import LocaleError
-from src.utils.ConstantUtils import CONST
 
 
 class RemoteWriter(Write):
@@ -20,9 +20,9 @@ class RemoteWriter(Write):
 
     def __get_collection(self, locale: str):
         if locale == "en":
-            collection_str = CONST.THOUGHT_COLLECTION_EN
+            collection_str = Environment.get().THOUGHT_COLLECTION_EN
         elif locale == "hr":
-            collection_str = CONST.THOUGHT_COLLECTION_HR
+            collection_str = Environment.get().THOUGHT_COLLECTION_HR
         else:
             raise LocaleError
 

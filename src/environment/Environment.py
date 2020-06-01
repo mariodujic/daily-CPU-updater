@@ -1,4 +1,4 @@
-from src.utils.EnvironmentType import EnvironmentType
+from src.environment.EnvironmentType import EnvironmentType
 
 
 def constant(f):
@@ -20,6 +20,13 @@ class _ConstStaging:
     def THOUGHT_COLLECTION_EN(self):
         return "en-thoughts-staging"
 
+    @constant
+    def LOCAL_THOUGHT_PATH(self):
+        return "assets/thoughts-staging.json"
+
+    @constant
+    def LOCAL_BACKUP_PATH(self):
+        return "backups-staging"
 
 class _ConstProduction:
     @constant
@@ -30,6 +37,13 @@ class _ConstProduction:
     def THOUGHT_COLLECTION_EN(self):
         return "en-thoughts"
 
+    @constant
+    def LOCAL_THOUGHT_PATH(self):
+        return "assets/thoughts.json"
+
+    @constant
+    def LOCAL_BACKUP_PATH(self):
+        return "backups"
 
 class Environment(object):
     environment_type = EnvironmentType.STAGING

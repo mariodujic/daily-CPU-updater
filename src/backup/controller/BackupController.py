@@ -1,4 +1,5 @@
 from src.backup.domain.BackupThoughtEncoder import BackupThoughtEncoder
+from src.environment.Environment import Environment
 from src.services.Read import Read
 from src.services.Write import Write
 from src.thoughts.data.Thought import Thought
@@ -15,13 +16,13 @@ class BackupController:
         time = TimeUtils.current_date_and_time_as_path_stamp()
         self.backup_writing_service.write(
             self.__read_remote_en_data(),
-            "backups/" + time+"/",
+            Environment.get().LOCAL_BACKUP_PATH + "/" + time + "/",
             "en-thoughts.json",
             BackupThoughtEncoder
         )
         self.backup_writing_service.write(
             self.__read_remote_hr_data(),
-            "backups/" + time+"/",
+            Environment.get().LOCAL_BACKUP_PATH + "/" + time + "/",
             "hr-thoughts.json",
             BackupThoughtEncoder
         )

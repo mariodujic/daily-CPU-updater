@@ -2,6 +2,8 @@ from src.backup.controller.BackupController import BackupController
 from src.backup.services.BackupWriter import BackupWriter
 from src.backup.services.RemoteReader import RemoteReader
 from src.data.RemoteDatabase import RemoteDatabase
+from src.environment.Environment import Environment
+from src.environment.EnvironmentType import EnvironmentType
 from src.thoughts.controller.ThoughtsController import ThoughtsController
 from src.thoughts.services.LocalReader import LocalReader
 from src.thoughts.services.LocalWriter import LocalWriter
@@ -27,5 +29,8 @@ class Main:
     )
 
     def initialize(self):
+        # For testing purpose keep staging environment.
+        # Production file "assets/thoughts.json" is in .gitignore for personal use.
+        Environment.set_environment(EnvironmentType.STAGING)
         self.thought_controller.write_data()
         self.backup_controller.write_remote_data_backup()

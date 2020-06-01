@@ -1,7 +1,8 @@
+from src.environment.Environment import Environment
 from src.services.Read import Read
 from src.services.Write import Write
-from src.thoughts.data.Thought import Thought
 from src.thoughts.data.ExtendedThoughtEncoder import ExtendedThoughtEncoder
+from src.thoughts.data.Thought import Thought
 from src.utils.ListUtils import ListUtils
 from src.utils.TimeUtils import TimeUtils
 
@@ -21,8 +22,11 @@ class ThoughtsController:
             self.__write_remote(thought)
 
     def __write_json(self, thought: Thought):
-        self.local_writing_service.write(self.__thought_used_list(thought), "assets/thoughts.json",
-                                         ExtendedThoughtEncoder)
+        self.local_writing_service.write(
+            self.__thought_used_list(thought),
+            Environment.get().LOCAL_THOUGHT_PATH,
+            ExtendedThoughtEncoder
+        )
 
     def __write_remote(self, thought: Thought):
         self.remote_writing_service.write(thought)
