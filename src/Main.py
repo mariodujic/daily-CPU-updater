@@ -31,6 +31,6 @@ class Main:
     def initialize(self):
         # For testing purpose keep staging environment.
         # Production file "assets/thoughts.json" is in .gitignore for personal use.
-        Environment.set_environment(EnvironmentType.STAGING)
+        Environment.set_environment(EnvironmentType.PRODUCTION)
         self.thought_controller.write_data()
         self.backup_controller.write_remote_data_backup()
