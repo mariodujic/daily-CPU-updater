@@ -5,21 +5,25 @@ from src.thoughts.data.ExtendedThoughtEncoder import ExtendedThoughtEncoder
 from src.thoughts.data.Thought import Thought
 from src.utils.ListUtils import ListUtils
 from src.utils.TimeUtils import TimeUtils
+from src.view.View import View
 
 
 class ThoughtsController:
-    def __init__(self, local_reader: Read, local_writer: Write, remote_writer: Write):
+    def __init__(self, local_reader: Read, local_writer: Write, remote_writer: Write, view: View):
         self.local_reading_service = local_reader
         self.local_writing_service = local_writer
         self.remote_writing_service = remote_writer
+        self.view = view
 
     def write_data(self):
         if len(self.__get_today_thoughts()) == 0:
-            print("There is no thought for today in JSON file")
+            self.view.show_message(Environment.get().WRITE_REMOTE_DATA_FAILURE)
             return
-        for thought in self.__get_today_thoughts():
+        thoughts = self.__get_today_thoughts()
+        for thought in thoughts:
             self.__write_json(thought)
             self.__write_remote(thought)
+        self.view.show_message("{}{}".format(Environment.get().WRITE_REMOTE_DATA_SUCCESS, len(thoughts)))
 
     def __write_json(self, thought: Thought):
         self.local_writing_service.write(

@@ -11,7 +11,25 @@ def constant(f):
     return property(temp_get, temp_set)
 
 
-class _ConstStaging:
+class _ConstCommon:
+    @constant
+    def WRITE_REMOTE_DATA_FAILURE(self):
+        return "Failure: No item for today in JSON file"
+
+    @constant
+    def WRITE_REMOTE_DATA_SUCCESS(self):
+        return "Completed: Pushed new items to a database. Item count: "
+
+    @constant
+    def BACKUP_REMOTE_DATA_LOCALLY_FAILURE(self):
+        return "Failure: Error while backing up remote data"
+
+    @constant
+    def BACKUP_REMOTE_DATA_LOCALY_SUCCESS(self):
+        return "Completed: Write remote backup"
+
+
+class _ConstStaging(_ConstCommon):
     @constant
     def THOUGHT_COLLECTION_HR(self):
         return "hr-thoughts-staging"
@@ -28,7 +46,11 @@ class _ConstStaging:
     def LOCAL_BACKUP_PATH(self):
         return "backups-staging"
 
-class _ConstProduction:
+    def MESSAGE_LOADING(self):
+        return "Loading staging environment.."
+
+
+class _ConstProduction(_ConstCommon):
     @constant
     def THOUGHT_COLLECTION_HR(self):
         return "hr-thoughts"
@@ -44,6 +66,10 @@ class _ConstProduction:
     @constant
     def LOCAL_BACKUP_PATH(self):
         return "backups"
+
+    def MESSAGE_LOADING(self):
+        return "Loading production environment.."
+
 
 class Environment(object):
     environment_type = EnvironmentType.STAGING
