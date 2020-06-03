@@ -1,5 +1,3 @@
-import uuid
-
 from src.environment.Environment import Environment
 from src.services.Write import Write
 from src.thoughts.data.Thought import Thought
@@ -13,10 +11,10 @@ class RemoteWriter(Write):
 
     def write(self, thought: Thought):
         print("Writing domain to firestore.")
-        self.__get_doc(thought.locale.name.lower()).set(thought.remote_dict())
+        self.__get_doc(thought.locale.name.lower(), thought.itemId).set(thought.remote_dict())
 
-    def __get_doc(self, locale: str):
-        return self.__get_collection(locale).document(str(uuid.uuid4()))
+    def __get_doc(self, locale: str, document_id: str):
+        return self.__get_collection(locale).document(document_id)
 
     def __get_collection(self, locale: str):
         if locale == "en":

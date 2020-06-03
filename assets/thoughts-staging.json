@@ -11,13 +11,13 @@
     },
     {
         "author": "Tom McLark",
-        "date": "2020-06-01T22:00:00.000Z",
+        "date": "2020-06-03T22:00:00.000Z",
         "image": "",
         "itemId": "asdasdsfgd",
         "text": "Random text",
         "title": "Random title",
         "locale": "hr",
-        "used": false
+        "used": true
     },
     {
         "author": "Tom McLark",
