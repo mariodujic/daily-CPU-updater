@@ -46,6 +46,7 @@ class _ConstStaging(_ConstCommon):
     def LOCAL_BACKUP_PATH(self):
         return "backups-staging"
 
+    @constant
     def MESSAGE_LOADING(self):
         return "Loading staging environment.."
 
@@ -67,6 +68,7 @@ class _ConstProduction(_ConstCommon):
     def LOCAL_BACKUP_PATH(self):
         return "backups"
 
+    @constant
     def MESSAGE_LOADING(self):
         return "Loading production environment.."
 
