@@ -1,0 +1,35 @@
+from unittest import TestCase
+
+from src.environment.Environment import Environment
+from src.environment.EnvironmentType import EnvironmentType
+
+
+class Test_Environment(TestCase):
+    def setUp(self):
+        self.environment = Environment()
+
+    def test_production_constants_assert_equals(self):
+        self.environment.set_environment(EnvironmentType.PRODUCTION)
+        hr_thoughts = "hr-thoughts"
+        en_thoughts = "en-thoughts"
+        thought_path = "assets/thoughts.json"
+        backup_thought_path = "backups"
+        view_loading_message = "Loading production environment.."
+        self.assertEqual(hr_thoughts, self.environment.get().THOUGHT_COLLECTION_HR)
+        self.assertEqual(en_thoughts, self.environment.get().THOUGHT_COLLECTION_EN)
+        self.assertEqual(thought_path, self.environment.get().LOCAL_THOUGHT_PATH)
+        self.assertEqual(backup_thought_path, self.environment.get().LOCAL_BACKUP_PATH)
+        self.assertEqual(view_loading_message, self.environment.get().MESSAGE_LOADING)
+
+    def test_staging_constants_assert_equals(self):
+        self.environment.set_environment(EnvironmentType.STAGING)
+        hr_thoughts = "hr-thoughts-staging"
+        en_thoughts = "en-thoughts-staging"
+        thought_path = "assets/thoughts-staging.json"
+        backup_thought_path = "backups-staging"
+        view_loading_message = "Loading staging environment.."
+        self.assertEqual(hr_thoughts, self.environment.get().THOUGHT_COLLECTION_HR)
+        self.assertEqual(en_thoughts, self.environment.get().THOUGHT_COLLECTION_EN)
+        self.assertEqual(thought_path, self.environment.get().LOCAL_THOUGHT_PATH)
+        self.assertEqual(backup_thought_path, self.environment.get().LOCAL_BACKUP_PATH)
+        self.assertEqual(view_loading_message, self.environment.get().MESSAGE_LOADING)
