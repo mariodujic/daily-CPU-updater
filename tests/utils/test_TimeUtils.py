@@ -12,7 +12,7 @@ class TestTimeUtils(TestCase):
 
     def test_is_date_today_asserts_false(self):
         past_time = "2020-06-03T22:00:00.000Z"
-        self.assertEqual(TimeUtils.is_today(past_time), False)
+        self.assertFalse(TimeUtils.is_today(past_time))
 
     def test_timestamp_format_asserts_true(self):
         date_now = datetime.datetime.now()
