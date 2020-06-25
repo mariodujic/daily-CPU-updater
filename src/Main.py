@@ -17,12 +17,12 @@ class Main:
     # dependencies
     root = Tk()
     view = View(root)
-    remote = RemoteDatabase()
+    database = RemoteDatabase()
     local_reader = LocalReader()
     local_writer = LocalWriter()
     backup_writer = BackupWriter(local_writer)
-    remote_writer = RemoteWriter(remote)
-    remote_reader = RemoteReader(remote)
+    remote_writer = RemoteWriter(database)
+    remote_reader = RemoteReader(database)
     thought_controller = ThoughtsController(
         local_reader,
         local_writer,
@@ -38,7 +38,7 @@ class Main:
     def initialize(self):
         # For testing purpose keep staging environment.
         # Production file "assets/thoughts.json" is in .gitignore for personal use.
-        Environment.set_environment(EnvironmentType.PRODUCTION)
+        Environment.set_environment(EnvironmentType.STAGING)
         self.view.show_message(Environment.get().MESSAGE_LOADING)
         self.thought_controller.write_data()
         self.backup_controller.write_remote_data_backup()

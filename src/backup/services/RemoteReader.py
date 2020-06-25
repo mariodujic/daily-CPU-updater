@@ -5,8 +5,8 @@ from src.thoughts.error_handlers.LocaleError import LocaleError
 
 
 class RemoteReader(Read):
-    def __init__(self, db: RemoteDatabase):
-        self.db = db
+    def __init__(self, remote_database: RemoteDatabase):
+        self.remote_database = remote_database
 
     def read(self, *args):
         return self.__get_collection(*args).stream()
@@ -19,4 +19,4 @@ class RemoteReader(Read):
         else:
             raise LocaleError
         print(collection_str)
-        return self.db.get_firestore_client().collection(collection_str)
+        return self.remote_database.get_firestore_client().collection(collection_str)

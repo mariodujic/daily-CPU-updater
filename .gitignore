@@ -5,6 +5,7 @@ TODO.txt
 backups/
 backups-staging/
 assets/thoughts.json
+urls.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
