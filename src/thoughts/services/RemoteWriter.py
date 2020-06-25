@@ -1,3 +1,4 @@
+from src.data.RemoteDatabase import RemoteDatabase
 from src.environment.Environment import Environment
 from src.services.Write import Write
 from src.thoughts.data.Thought import Thought
@@ -6,7 +7,7 @@ from src.thoughts.error_handlers.LocaleError import LocaleError
 
 class RemoteWriter(Write):
 
-    def __init__(self, db):
+    def __init__(self, db: RemoteDatabase):
         self.db = db
 
     def write(self, thought: Thought):
@@ -24,4 +25,4 @@ class RemoteWriter(Write):
         else:
             raise LocaleError
 
-        return self.db.collection(collection_str)
+        return self.db.get_firestore_client().collection(collection_str)

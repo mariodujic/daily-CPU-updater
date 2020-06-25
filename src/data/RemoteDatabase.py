@@ -1,5 +1,5 @@
 import firebase_admin
-from firebase_admin import credentials, firestore
+from firebase_admin import credentials, firestore, db
 
 
 class RemoteDatabase:
@@ -8,5 +8,8 @@ class RemoteDatabase:
         cred = credentials.Certificate("google-service.json")
         firebase_admin.initialize_app(cred)
 
-    def get_client(self):
+    def get_firestore_client(self):
         return firestore.client()
+
+    def get_database_client(self):
+        return db

@@ -21,8 +21,8 @@ class Main:
     local_reader = LocalReader()
     local_writer = LocalWriter()
     backup_writer = BackupWriter(local_writer)
-    remote_writer = RemoteWriter(remote.get_client())
-    remote_reader = RemoteReader(remote.get_client())
+    remote_writer = RemoteWriter(remote)
+    remote_reader = RemoteReader(remote)
     thought_controller = ThoughtsController(
         local_reader,
         local_writer,

@@ -1,10 +1,11 @@
+from src.data.RemoteDatabase import RemoteDatabase
 from src.environment.Environment import Environment
 from src.services.Read import Read
 from src.thoughts.error_handlers.LocaleError import LocaleError
 
 
 class RemoteReader(Read):
-    def __init__(self, db):
+    def __init__(self, db: RemoteDatabase):
         self.db = db
 
     def read(self, *args):
@@ -18,4 +19,4 @@ class RemoteReader(Read):
         else:
             raise LocaleError
         print(collection_str)
-        return self.db.collection(collection_str)
+        return self.db.get_firestore_client().collection(collection_str)
