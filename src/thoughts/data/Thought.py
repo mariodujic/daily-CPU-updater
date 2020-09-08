@@ -39,7 +39,6 @@ class Thought:
 
     @staticmethod
     def remote_to_object(data):
-        print(data)
         return Thought(
             data["author"],
             data["date"],
