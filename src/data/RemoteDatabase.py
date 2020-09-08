@@ -1,7 +1,9 @@
-import json
-
 import firebase_admin
+import requests
 from firebase_admin import credentials, firestore, db
+
+from src.environment.Environment import Environment
+from src.utils.SecretUtils import SecretUtils
 
 
 class RemoteDatabase:
@@ -19,5 +21,17 @@ class RemoteDatabase:
         return db
 
     def __get_firebase_url(self):
-        with open('urls.json') as json_file:
-            return json.load(json_file)["firebase_database_url"]
+        return SecretUtils.get_url("firebase_database_url")
+
+    def get_middleware_post_request(self, data, api):
+        return requests.post(
+            url=Environment.get().MIDDLEWARE_URL + self.__middleware_thought_route() + api,
+            data=data,
+            headers=self.__middleware_headers()
+        )
+
+    def __middleware_headers(self):
+        return {'CA-Auth': SecretUtils.get_url("middleware_header_auth_secret")}
+
+    def __middleware_thought_route(self):
+        return "/thoughts/"

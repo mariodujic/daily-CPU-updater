@@ -18,5 +18,4 @@ class RemoteReader(Read):
             collection_str = Environment.get().THOUGHT_COLLECTION_HR
         else:
             raise LocaleError
-        print(collection_str)
         return self.remote_database.get_firestore_client().collection(collection_str)
