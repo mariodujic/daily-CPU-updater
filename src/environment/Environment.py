@@ -1,4 +1,5 @@
 from src.environment.EnvironmentType import EnvironmentType
+from src.utils.SecretUtils import SecretUtils
 
 
 def constant(f):
@@ -50,6 +51,18 @@ class _ConstStaging(_ConstCommon):
     def MESSAGE_LOADING(self):
         return "Loading staging environment.."
 
+    @constant
+    def MIDDLEWARE_URL(self):
+        return SecretUtils.get_url("middleware_local_url")
+
+    @constant
+    def MIDDLEWARE_ADD_THOUGHT_HR(self):
+        return "hr-staging"
+
+    @constant
+    def MIDDLEWARE_ADD_THOUGHT_EN(self):
+        return "en-staging"
+
 
 class _ConstProduction(_ConstCommon):
     @constant
@@ -72,6 +85,18 @@ class _ConstProduction(_ConstCommon):
     def MESSAGE_LOADING(self):
         return "Loading production environment.."
 
+    @constant
+    def MIDDLEWARE_URL(self):
+        return SecretUtils.get_url("middleware_remote_url")
+
+    @constant
+    def MIDDLEWARE_ADD_THOUGHT_HR(self):
+        return "hr"
+
+    @constant
+    def MIDDLEWARE_ADD_THOUGHT_EN(self):
+        return "en"
+
 
 class Environment(object):
     environment_type = EnvironmentType.STAGING
@@ -79,6 +104,9 @@ class Environment(object):
     @classmethod
     def set_environment(cls, environment_type):
         cls.environment_type = environment_type
+
+    def get_environment(self):
+        return self.environment_type
 
     @classmethod
     def get(cls):
