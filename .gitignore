@@ -5,6 +5,7 @@ TODO.txt
 backups/
 backups-staging/
 assets/thoughts.json
+assets/thoughts-staging.json
 urls.json
 
 # Byte-compiled / optimized / DLL files
