@@ -1,6 +1,6 @@
 import firebase_admin
 import requests
-from firebase_admin import credentials, firestore, db
+from firebase_admin import credentials, firestore, db, messaging
 
 from src.environment.Environment import Environment
 from src.utils.SecretUtils import SecretUtils
@@ -19,6 +19,9 @@ class RemoteDatabase:
 
     def get_database_client(self):
         return db
+
+    def get_firebase_messaging(self):
+        return messaging
 
     def __get_firebase_url(self):
         return SecretUtils.get_url("firebase_database_url")
