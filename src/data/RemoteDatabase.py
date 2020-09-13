@@ -1,3 +1,5 @@
+import json
+
 import firebase_admin
 import requests
 from firebase_admin import credentials, firestore, db, messaging
@@ -29,12 +31,15 @@ class RemoteDatabase:
     def get_middleware_post_request(self, data, api):
         return requests.post(
             url=Environment.get().MIDDLEWARE_URL + self.__middleware_thought_route() + api,
-            data=data,
+            data=json.dumps(data),
             headers=self.__middleware_headers()
         )
 
     def __middleware_headers(self):
-        return {SecretUtils.get_url("middleware_header_auth_key"): SecretUtils.get_url("middleware_header_auth_secret")}
+        return {
+            SecretUtils.get_url("middleware_header_auth_key"): SecretUtils.get_url("middleware_header_auth_secret"),
+            "Content-Type": "application/json"
+        }
 
     def __middleware_thought_route(self):
         return "/thoughts/"
