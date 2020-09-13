@@ -34,7 +34,7 @@ class RemoteDatabase:
         )
 
     def __middleware_headers(self):
-        return {'CA-Auth': SecretUtils.get_url("middleware_header_auth_secret")}
+        return {SecretUtils.get_url("middleware_header_auth_key"): SecretUtils.get_url("middleware_header_auth_secret")}
 
     def __middleware_thought_route(self):
         return "/thoughts/"
