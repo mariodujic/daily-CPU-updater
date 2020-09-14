@@ -38,12 +38,15 @@ class RemoteWriter(Write):
         topic = self.__get_environment_reference(locale)
         messaging = self.remote_database.get_firebase_messaging()
 
+        thought_notification_dict = thought.remote_dict()
+        thought_notification_dict["notificationType"] = "0"
+
         message = messaging.Message(
             android=messaging.AndroidConfig(
                 ttl=datetime.timedelta(seconds=172800),
                 priority='high'
             ),
-            data=thought.remote_dict(),
+            data=thought_notification_dict,
             topic=topic,
         )
         messaging.send(message)
